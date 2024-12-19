@@ -1,0 +1,191 @@
+/* Основные стили страницы */
+body {
+    font-family: 'Montserrat', Arial, sans-serif; /* Используем шрифт Montserrat для всего текста */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f3f7; /* Светло-серый фон для более комфортного чтения */
+    color: #333;
+    text-align: center;
+}
+
+
+
+/* Стили для заголовков */
+h1, h2 {
+    color: #333;
+    margin-top: 20px;
+    font-family: 'Montserrat', Arial, sans-serif; /* Шрифт Montserrat для заголовков */
+}
+
+/* Стили для заголовка страницы */
+h1 {
+    margin-top: 50px; /* Увеличиваем отступ сверху для заголовка */
+}
+
+/* Стили для заголовка "Наше меню" */
+h2 {
+    margin-top: 40px; /* Увеличиваем отступ сверху для заголовка */
+}
+
+/* Стили для уведомления */
+.notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745;
+    color: #fff;
+    padding: 15px;
+    border: 1px solid #218838;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+    opacity: 1;
+    animation: fadeOut 3s forwards;
+    animation-delay: 2s;
+}
+
+/* Анимация для уведомления */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Стили для таблицы */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #4a4d4f;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #e9ecef;
+}
+
+/* Стили для кнопки добавления пиццы */
+.add-pizza-container {
+    margin: 20px auto;
+}
+
+.add-pizza-btn {
+    background-color:#e74646;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Montserrat', Arial, sans-serif; /* Шрифт для кнопки */
+}
+
+.add-pizza-btn:hover {
+    background-color: #912020;
+    cursor: pointer;
+}
+
+/* Стили для обертки поиска */
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    gap: 15px;
+}
+
+/* Поле поиска */
+.form-control {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Кнопка поиска */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-auth-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Выравнивание элементов по правому краю */
+    gap: 10px; /* Расстояние между элементами */
+    margin-top: 20px; /* Отступ сверху, чтобы отделить от других элементов */
+}
+
+.search-wrapper {
+    flex: 1; /* Заполняет доступное пространство, чтобы поле поиска занимало больше места */
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.auth-btn {
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 20px; /* Отступ между кнопкой выхода и кнопкой поиска */
+}
+
+.auth-btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+/* Стили для обертки заголовка и действий */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
